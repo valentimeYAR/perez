@@ -20,7 +20,7 @@ const Constants = {
     startButton: document.getElementById('start'),
     timer: document.getElementById('timer'),
     gameResult: false,
-    gameTimer: 3,
+    gameTimer: 59,
     timerSeconds: 3,
     totalAttempts: 1,
     rightAttempts: 0,
