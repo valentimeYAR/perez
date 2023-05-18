@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Студия перцы</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="#">
+                <img src="https://wikium.ru/duel/assets/img/logo/header-logo.svg" alt="Logo" class="logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="/" class="menu-btn">Программа развития</a>
+            <a href="/" class="menu-btn">Тренажеры</a>
+            <a href="/" class="menu-btn">Соревнования</a>
+            <a href="/" class="menu-btn">Курсы</a>
+            <a href="/" class="menu-btn">Статистика</a>
+            <a href="/" class="menu-btn">Достижения</a>
+        </div>
+        <div class="buttons">
+            <button class="premium-btn">Получить премиум</button>
+            <img src="https://giffun.ru/wp-content/uploads/2022/09/1.gif" alt="Present" class="present">
+            <div class="user-profile"></div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="game-container">
+        <div class="game-block">
+            <div class="first-screen">
+                <div class="first-screen-elements">
+                    <h2 class="game-about">Совпадают ли цвета?</h2>
+                    <button id="start">Начать тренировку</button>
+                </div>
+            </div>
+            <div class="timer-screen" style="visibility: hidden">
+                <p id="timer">3</p>
+            </div>
+            <div class="main-screen" style="visibility: hidden">
+                <div class="main-screen-elements">
+                    <div id="game-info">
+                        <div class="game-timer">
+                            <p class="game-info-title">Время</p>
+                            <p class="game-info-subtitle" id="time">59 сек.</p>
+                        </div>
+                        <div class="game-level">
+                            <p class="game-info-title">Уровень</p>
+                            <p class="game-info-subtitle" id="level">1</p>
+                        </div>
+                        <div class="game-scores">
+                            <p class="game-info-title">Очки</p>
+                            <p class="game-info-subtitle" id="scores">0</p>
+                        </div>
+                        <div class="game-bonus">
+                            <p class="game-info-title">Бонус</p>
+                            <p class="game-info-subtitle" id="bonus">1</p>
+                        </div>
+                    </div>
+                    <h2 class="game-about" id="game-about" style="margin-bottom: 50px">
+                        Совпадает ли название цвета на левой карточке с цветом на правой карточке?
+                    </h2>
+                    <div class="colors">
+                        <div class="color-value">
+                            <h2 class="color-title colors-title">Значение</h2>
+                            <p class="color-block" id="color-value">Зеленый</p>
+                        </div>
+                        <div class="color-name">
+                            <h2 class="name-title colors-title">Цвет</h2>
+                            <p class="color-block" id="color-name">Синий</p>
+                        </div>
+                    </div>
+                    <div class="colors-buttons">
+                        <button class="color-btn" id="color-no">Нет</button>
+                        <button class="color-btn" id="color-yes">Да</button>
+                    </div>
+                </div>
+            </div>
+            <div class="result-screen" style="visibility: hidden">
+                <div class="result-elements">
+                    <div class="top">ВАШ РЕЗУЛЬТАТ: </div>
+                    <div class="result">
+                        <div class="result-left">
+                            <p>Текущий результат: <span id="result">200</span></p>
+                            <p>Верных ответов: <span id="right"></span></p>
+                            <p>Точность ответов: <span id="accuracy"></span></p>
+                        </div>
+                        <button id="reset">Заново</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="game-description">
+            <span class="add-to-favorites">Добавить тренажер в избранное</span>
+            <p class="game-title">А на практике?</p>
+            <p class="game-text">
+                Данная методика хорошо развивает переключение между заданиями, и, благодаря ей, вы можете избежать ДТП и
+                лучше ориентироваться в пространстве, имеющем небольшие изменения привычного вида.
+            </p>
+        </div>
+    </div>
+</main>
+<script src="scripts/script.js" type="module"></script>
+</body>
+</html>
